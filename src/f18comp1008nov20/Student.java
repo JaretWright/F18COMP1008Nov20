@@ -74,9 +74,14 @@ public class Student {
      * This method returns the age based on the birthday passed in as an argument
      * @param birthday 
      */
-    public int getAge(LocalDate birthday)
+    private int getAge(LocalDate birthday)
     {
         return Period.between(birthday, LocalDate.now()).getYears();
+    }
+    
+    public int getAge()
+    {
+        return getAge(birthday); 
     }
     
     /**
@@ -90,8 +95,5 @@ public class Student {
             this.birthday = birthday;
         else throw new IllegalArgumentException("student must be 4-105 years old");
     }
-    
-    
-    
     
 }
