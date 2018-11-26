@@ -25,6 +25,7 @@ public class LuckyNumberViewController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         messageLabel.setText("");
+        
     }    
     
     @FXML

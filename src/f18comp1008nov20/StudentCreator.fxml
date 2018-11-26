@@ -6,6 +6,7 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -17,7 +18,7 @@
         <URL value="@studentcreator.css" />
     </stylesheets>
    <children>
-      <HBox layoutX="179.0" layoutY="63.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <HBox alignment="CENTER" layoutX="179.0" layoutY="63.0" prefHeight="400.0" prefWidth="600.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <GridPane prefHeight="360.0" prefWidth="358.0">
               <columnConstraints>
@@ -40,10 +41,11 @@
                   <TextField GridPane.columnIndex="1" />
                   <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <ComboBox prefHeight="57.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <ComboBox fx:id="genderComboBox" onAction="#genderChanger" prefHeight="57.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                   <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                </children>
             </GridPane>
+            <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
          </children>
          <padding>
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
